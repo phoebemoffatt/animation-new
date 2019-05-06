@@ -1,0 +1,751 @@
+body {
+  margin: 0;
+}
+.sky {
+  position: absolute;
+  z-index: 0;
+  height: 600px;
+  width: 100%;
+  background-image: linear-gradient(black, #454C8A); /* For browsers that do not support gradients */
+  /*background-image: linear-gradient(#BBECEE, #F9F988); /* Standard syntax (must be last) */
+  top: 1px;
+}
+
+.sun {
+  position: absolute;
+	top:-590px;
+	left:-1270px;
+	right:0;
+	bottom:0;
+	margin: auto;
+	width:70px;
+	height:70px;
+	border-radius:50%;
+	background:white;
+	opacity:0.9;
+	box-shadow: 0px 0px 40px 15px white;
+}
+
+.ray_box { /* design of the sun rays */
+  position: absolute;
+  margin: auto;
+	top:0px;
+	left:0;
+	right:0;
+	bottom:0;
+  width:70px;
+  -webkit-animation: ray_anim 120s linear infinite; /* seconds it takes for rays move around the sun */
+  animation: ray_anim 120s linear infinite;
+}
+.ray { /* design of the sun rays */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%); /* colour of the rays */
+		background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+    margin-left:10px;
+    border-radius:80% 80% 0 0;
+    position:absolute;
+    opacity:0.1;
+}
+
+.ray1 {
+    height:170px;
+    width:30px;
+   -webkit-transform: rotate(180deg); /* position of each ray around the sun */
+    top:-175px;
+    left: 15px;
+}
+.ray2 {
+    height:100px;
+    width:8px;
+   -webkit-transform: rotate(220deg);
+    top:-90px;
+    left: 75px;
+}
+.ray3 {
+    height:170px;
+    width:50px;
+   -webkit-transform: rotate(250deg);
+    top:-80px;
+    left: 100px;
+}
+.ray4 {
+    height:120px;
+    width:14px;
+   -webkit-transform: rotate(305deg);
+    top:30px;
+    left: 100px;
+}
+.ray5 {
+    height:140px;
+    width:30px;
+   -webkit-transform: rotate(-15deg);
+    top:60px;
+    left: 40px;
+}
+.ray6 {
+    height:90px;
+    width:50px;
+   -webkit-transform: rotate(30deg);
+    top:60px;
+    left: -40px;
+}
+.ray7 {
+    height:180px;
+    width:10px;
+   -webkit-transform: rotate(70deg);
+    top:-35px;
+    left: -40px;
+}
+.ray8 {
+    height:120px;
+    width:30px;
+   -webkit-transform: rotate(100deg);
+    top:-45px;
+    left:-90px;
+}
+.ray9 {
+    height:80px;
+    width:10px;
+   -webkit-transform: rotate(120deg);
+    top:-65px;
+    left:-60px;
+}
+.ray10 {
+    height:190px;
+    width:23px;
+   -webkit-transform: rotate(150deg);
+    top:-185px;
+    left: -60px;
+}
+
+
+@-webkit-keyframes ray_anim { /* degrees the rays will rotate */
+		0% { -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+}
+
+.clouds {
+  width: 200px;
+  height: 250px;
+  position: absolute;
+}
+
+.cloud1 {
+  position: absolute;
+	top: -10px;
+  z-index: 0;
+  fill: white;
+  opacity: 0.5;
+  /* Animation order: name, duration, timing-function, delay */
+  -webkit-animation: move 20s linear infinite;
+  -moz-animation: move 20s linear infinite;
+  -o-animation: move 20s linear infinite;
+  animation: move 20s linear infinite;
+}
+
+.cloud2 {
+  position: absolute;
+	top: 30px;
+  z-index: 0;
+  fill: white;
+  opacity: 0.5;
+  /* Animation order: name, duration, timing-function, delay */
+  -webkit-animation: move 10s linear infinite;
+  -moz-animation: move 10s linear infinite;
+  -o-animation: move 10s linear infinite;
+  animation: move 10s linear infinite;
+}
+
+.cloud3 {
+  position: absolute;
+	top: 30px;
+  z-index: 0;
+  fill: white;
+  opacity: 0.5;
+  /* Animation order: name, duration, timing-function, delay */
+  -webkit-animation: move 30s linear infinite;
+  -moz-animation: move 30s linear infinite;
+  -o-animation: move 30s linear infinite;
+  animation: move 30s linear infinite;
+}
+
+@-webkit-keyframes move {
+  from {-webkit-transform: translateX(-400px);}
+  to {-webkit-transform: translateX(1350px);}
+}
+
+
+.stars {
+  position: absolute;
+}
+
+.star1 { /* design of the stars, colour, shape and position */
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-radius: 10px;
+  background: white;
+  left: 1018px;
+  top: 100px;
+}
+
+.star2 {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-radius: 10px;
+  background: white;
+  left: 188px;
+  top: 160px;
+}
+
+.star3 {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-radius: 10px;
+  background: white;
+  left: 298px;
+  top: 250px;
+}
+
+.star4 {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-radius: 10px;
+  background: white;
+  left: 49px;
+  top: 300px;
+}
+
+.star5 {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-radius: 10px;
+  background: white;
+  left: 918px;
+  top: 400px;
+}
+
+.star6 {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-radius: 10px;
+  background: white;
+  left: 718px;
+  top: 100px;
+}
+
+.star7 {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-radius: 10px;
+  background: white;
+  left: 618px;
+  top: 300px;
+}
+
+.star8 {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-radius: 10px;
+  background: white;
+  left: 418px;
+  top: 400px;
+}
+
+.star9 {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-radius: 10px;
+  background: white;
+  left: 1218px;
+  top: 250px;
+}
+
+.star10 {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-radius: 10px;
+  background: white;
+  left: 1418px;
+  top: 150px;
+}
+
+.star11 {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-radius: 10px;
+  background: white;
+  left: 1318px;
+  top: 400px;
+}
+
+.grass {
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  background-color: #5BB634;
+  top: 500px;
+}
+
+.reed1 {
+  position: absolute;
+  width: 0;
+  height: -10px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 140px solid #387F27;
+  left: 90px;
+}
+
+.reed2 {
+  position: absolute;
+  width: 0;
+  height: 120px;
+  border-left: 15px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 100px solid #387F27;
+  left: 150px;
+  top: 40px;
+}
+
+.reed3 {
+  position: absolute;
+  width: 0;
+  height: 100px;
+  border-left: 25px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 200px solid #387F27;
+  left: 170px;
+}
+
+.reed4 {
+  position: absolute;
+  width: 0;
+  height: 60px;
+  border-left: 20px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 60px solid #387F27;
+  left: 1350px;
+}
+
+.reed5 {
+  position: absolute;
+  width: 0;
+  height: -10px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 140px solid #387F27;
+  left: 160px;
+  top: -40px;
+}
+
+.reed6 {
+  position: absolute;
+  width: 0;
+  height: 120px;
+  border-left: 15px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 100px solid #387F27;
+  left: 410px;
+  top: -160px;
+}
+
+.reed7 {
+  position: absolute;
+  width: 0;
+  height: 100px;
+  border-left: 25px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 200px solid #387F27;
+  left: 390px;
+  top: -20px;
+}
+
+.reed8 {
+  position: absolute;
+  width: 0;
+  height: 60px;
+  border-left: 20px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 60px solid #387F27;
+  left: 300px;
+}
+
+.reed9 {
+  position: absolute;
+  width: 0;
+  height: 60px;
+  border-left: 20px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 60px solid #387F27;
+  left: 470px;
+  top: 50px;
+}
+
+.reed10 {
+  position: absolute;
+  width: 0;
+  height: -10px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 140px solid #387F27;
+  left: 900px;
+}
+
+.reed11 {
+  position: absolute;
+  width: 0;
+  height: 120px;
+  border-left: 15px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 100px solid #387F27;
+  left: 1080px;
+  top: 30px;
+}
+
+.reed12 {
+  position: absolute;
+  width: 0;
+  height: 120px;
+  border-left: 15px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 100px solid #387F27;
+  left: 1250px;
+  top: -160px;
+}
+
+.reed13 {
+  position: absolute;
+  width: 0;
+  height: 60px;
+  border-left: 20px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 60px solid #387F27;
+  left: 570px
+}
+
+.reed14 {
+  position: absolute;
+  width: 0;
+  height: 120px;
+  border-left: 15px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 100px solid #387F27;
+  left: 680px;
+}
+
+.reed15 {
+  position: absolute;
+  width: 0;
+  height: -10px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 140px solid #387F27;
+  left: 700px;
+}
+
+.reed16 {
+  position: absolute;
+  width: 0;
+  height: 120px;
+  border-left: 15px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 100px solid #387F27;
+  left: 780px;
+}
+
+.chick {
+  position: absolute;
+  top: -30px;
+  left: -890px;
+  -webkit-animation: mymove 8s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 8s infinite;
+}
+
+ /*Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+from {left: -890px;} /* how far from the side of the screen the movement will start */
+to {left: 600px;} /* how far from the side of the screen the movement will stop */
+}
+
+@keyframes mymove {
+from {left: -890px;} /* how far from the side of the screen the movement will start */
+to {left: 600px;} /* how far from the side of the screen the movement will stop */
+}
+
+.head {
+  position: absolute;
+  height: 110px;
+  width: 118px;
+  border-radius: 80px;
+  background: #CECBCB;
+  left: 930px;
+  top: 420px;
+}
+
+.hair-1 {
+  position: absolute;
+  border-left: 4px solid #CECBCB;
+  height: 40px;
+  transform: rotate(140deg);
+  left: 960px;
+  top: 390px;
+}
+
+.hair-2 {
+  position: absolute;
+  border-left: 4px solid #CECBCB;
+  height: 40px;
+  transform: rotate(170deg);
+  left: 970px;
+  top: 383px;
+}
+
+.hair-3 {
+  position: absolute;
+  border-left: 4px solid #CECBCB;
+  height: 40px;
+  transform: rotate(196deg);
+  left: 980px;
+  top: 383px;
+}
+
+.half-circle {
+  position: absolute;
+  width: 13px;
+  height: 7px;
+  border-top-left-radius: 110px;
+  border-top-right-radius: 110px;
+  transform: rotate(180deg);
+  border: 3px solid black;
+  border-bottom: 0;
+  left: 998px;
+  top: 465px;
+}
+
+.half-circle-2 {
+position: absolute;
+width: 13px;
+height: 7px;
+border-top-left-radius: 110px;
+border-top-right-radius: 110px;
+transform: rotate(180deg);
+border: 3px solid black;
+border-bottom: 0;
+left: 960px;
+top: 465px;
+}
+
+.cheek-1 {
+position: absolute;
+height: 13px;
+width: 19px;
+border-radius: 40px;
+background: pink;
+left: 940px;
+top: 480px;
+}
+
+.cheek-2 {
+position: absolute;
+height: 13px;
+width: 19px;
+border-radius: 40px;
+background: pink;
+left: 1018px;
+top: 480px;
+}
+
+.beak-1 {
+position: absolute;
+width: 0;
+height: 0;
+border-left: 15px solid transparent;
+border-right: 15px solid transparent;
+border-bottom: 20px solid black;
+left: 974px;
+top: 480px;
+}
+
+.beak-2 {
+position: absolute;
+width: 0;
+height: 0;
+border-left: 15px solid transparent;
+border-right: 15px solid transparent;
+border-top: 20px solid #777272;
+left: 974px;
+top: 500px;
+}
+
+.body {
+  position: absolute;
+  width: 130px;
+  height: 100px;
+  background-image: linear-gradient(#CECBCB, #777272);
+  border-radius: 50%;
+  left: 925px;
+  top: 520px;
+}
+
+.wing-1 {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  background: #777272;
+  border-radius: 50%;
+  transform: rotate(150deg);
+  left: 1020px;
+  top: 520px;
+}
+
+.wing-2 {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  background: #777272;
+  border-radius: 50%;
+  transform: rotate(30deg);
+  left: 920px;
+  top: 520px;
+}
+
+.leg-1 {
+  position: absolute;
+  border-left: 10px solid black;
+  height: 20px;
+  transform: rotate(190deg);
+  left: 970px;
+  top: 618px;
+}
+
+.leg-2 {
+  position: absolute;
+  border-left: 10px solid black;
+  height: 20px;
+  transform: rotate(160deg);
+  left: 1012px;
+  top: 614px;
+}
+
+.feet-1 {
+  position: absolute;
+  border-bottom: 15px solid black;
+  border-left: 15px solid transparent;
+  border-right: 10px solid transparent;
+  height: 0;
+  width: 10px;
+  left: 953px;
+  top: 637px;
+}
+
+.feet-2 {
+  position: absolute;
+  border-bottom: 15px solid black;
+  border-left: 10px solid transparent;
+  border-right: 15px solid transparent;
+  height: 0;
+  width: 10px;
+  left: 1006px;
+  top: 632px;
+}
+
+p {
+  padding-top: 30px;
+  padding-left: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+p-1 {
+  padding-top: 60px;
+  padding-left: 25px;
+  text-align: center;
+  font-size: 25px;
+  font-family: cursive;
+  color: red;
+}
+
+.speech-bubble {
+  position: absolute;
+  top: -540px;
+  left: -120px;
+}
+
+
+
+.text-bubble {
+  position: absolute;
+  width: 380px;
+  height: 200px;
+  background: #A8F9FC;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  left: 1110px;
+  top: 720px;
+}
+
+.speech-bubble-2 {
+  position: absolute;
+  top: -290px;
+  left: -960px;
+}
+
+.text-bubble-2 {
+    position: absolute;
+    width: 340px;
+    height: 180px;
+    background: #A8F9FC;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    left: 1090px;
+    top: 513px;
+  }
+
+
+
+.next { /* next button font design */
+  position: absolute;
+  background-color: yellow;
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-family: cursive;
+  left: 1130px;
+  top: 637px;
+}
+
+a:hover {
+background-color: #A8F9FC;
+color: black;
+}
+
+.back {  /* back button font design */
+  position: absolute;
+  background-color: yellow;
+  color: black;
+  text-align: center;
+  font-size: 50px;
+  font-family: cursive;
+  left: 50px;
+  top: 637px;
+}
+
+a:hover {
+background-color: #A8F9FC;
+color: black;
+}

@@ -1,0 +1,442 @@
+body {
+  margin: 0;
+  background-color: #FF9CE7; /* colour of background screen */
+}
+
+.background-square { /* design of the square to split background */
+  position: absolute;
+  width: 760px;
+  height: 755px;
+  background: #FCF766; /* colour of square */
+}
+
+
+
+.head {
+  position: absolute;
+  height: 110px;
+  width: 118px;
+  border-radius: 80px;
+  background: white;
+  left: 930px;
+  top: 420px;
+}
+
+.hair-1 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 35px solid white;
+  left: 980px;
+  top: 390px;
+  left: 970px;
+  top: 389px;
+}
+
+.half-circle {
+  position: absolute;
+  width: 13px;
+  height: 7px;
+  border-top-left-radius: 110px;
+  border-top-right-radius: 110px;
+  transform: rotate(180deg);
+  border: 3px solid black;
+  border-bottom: 0;
+  left: 998px;
+  top: 465px;
+}
+
+.half-circle-2 {
+position: absolute;
+width: 13px;
+height: 7px;
+border-top-left-radius: 110px;
+border-top-right-radius: 110px;
+transform: rotate(180deg);
+border: 3px solid black;
+border-bottom: 0;
+left: 960px;
+top: 465px;
+}
+
+.cheek-1 {
+position: absolute;
+height: 13px;
+width: 19px;
+border-radius: 40px;
+background: pink;
+left: 940px;
+top: 480px;
+}
+
+.cheek-2 {
+position: absolute;
+height: 13px;
+width: 19px;
+border-radius: 40px;
+background: pink;
+left: 1018px;
+top: 480px;
+}
+
+.beak-1 {
+position: absolute;
+width: 0;
+height: 0;
+border-left: 15px solid transparent;
+border-right: 15px solid transparent;
+border-bottom: 20px solid #C9833D;
+left: 974px;
+top: 480px;
+}
+
+.beak-2 {
+position: absolute;
+width: 0;
+height: 0;
+border-left: 15px solid transparent;
+border-right: 15px solid transparent;
+border-top: 20px solid #FF9C39;
+left: 974px;
+top: 500px;
+}
+
+.body {
+  position: absolute;
+  width: 130px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  left: 925px;
+  top: 520px;
+}
+
+.wing-1 {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  background: white;
+  border-color: grey;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+  transform: rotate(150deg);
+  left: 1020px;
+  top: 520px;
+}
+
+.wing-2 {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  background: white;
+  border-color: grey;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+  transform: rotate(30deg);
+  left: 920px;
+  top: 520px;
+}
+
+.leg-1 {
+  position: absolute;
+  border-left: 10px solid #FF9C39;
+  height: 20px;
+  transform: rotate(190deg);
+  left: 970px;
+  top: 618px;
+}
+
+
+
+.leg-2 {
+  position: absolute;
+  border-left: 10px solid #FF9C39;
+  height: 20px;
+  transform: rotate(160deg);
+  left: 1012px;
+  top: 614px;
+}
+
+.feet-1 {
+  position: absolute;
+  border-bottom: 15px solid #FF9C39;
+  border-left: 15px solid transparent;
+  border-right: 10px solid transparent;
+  height: 0;
+  width: 10px;
+  left: 953px;
+  top: 637px;
+}
+
+.feet-2 {
+  position: absolute;
+  border-bottom: 15px solid #FF9C39;
+  border-left: 10px solid transparent;
+  border-right: 15px solid transparent;
+  height: 0;
+  width: 10px;
+  left: 1006px;
+  top: 633px;
+}
+
+.chick {
+  position: absolute;
+  left: -640px;
+  top: -70px;
+}
+
+.rhyme-box { /* positioning together of seperate square divs */
+  position: absolute;
+  left: 15px;
+  top: -10px;
+}
+
+.rhymesquare-1 { /* design of each seperate square div */
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  background: #2CCEF6;
+  left: 950px;
+  top: 210px;
+}
+
+.rhymesquare-2 {
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  background: #CD57DF;
+  left: 1150px;
+  top: 210px;
+}
+
+.rhymesquare-3 {
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  background: #F7981B;
+  left: 1150px;
+  top: 290px;
+}
+
+.rhymesquare-4 {
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  background: #31F71B;
+  left: 950px;
+  top: 290px;
+}
+
+.rhymesquare-5 {
+  position: absolute;
+  width: 130px;
+  height: 50px;
+  border-color: black;
+  border-style: solid;
+  border-width: 5px;
+  background: white;
+  left: 1080px;
+  top: 265px;
+}
+
+.rhyme-box-2 {
+  position: absolute;
+  left: 15px;
+  top: 240px;
+}
+
+.rhymesquare-1 {
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  background: #2CCEF6;
+  left: 950px;
+  top: 210px;
+}
+
+.rhymesquare-2 {
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  background: #CD57DF;
+  left: 1150px;
+  top: 210px;
+}
+
+.rhymesquare-3 {
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  background: #F7981B;
+  left: 1150px;
+  top: 290px;
+}
+
+.rhymesquare-4 {
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  background: #31F71B;
+  left: 950px;
+  top: 290px;
+}
+
+.rhymesquare-5 {
+  position: absolute;
+  width: 130px;
+  height: 50px;
+  border-color: black;
+  border-style: solid;
+  border-width: 5px;
+  background: white;
+  left: 1080px;
+  top: 265px;
+}
+
+.rhyme-text {
+  position: absolute;
+  left: 800px;
+  top: 375px;
+}
+
+.rhyme-1 {
+  position: absolute;
+  left: 1140px;
+  top: 250px;
+}
+
+.rhyme-2 {
+  position: absolute;
+  left: 1020px;
+  top: 210px;
+}
+
+.rhyme-3 {
+  position: absolute;
+  left: 1250px;
+  top: 210px;
+}
+
+.rhyme-4 {
+  position: absolute;
+  left: 1020px;
+  top: 290px;
+}
+
+.rhyme-5 {
+  position: absolute;
+  left: 1250px;
+  top: 290px;
+}
+
+.rhyme-6 {
+  position: absolute;
+  left: 1140px;
+  top: 500px;
+}
+
+.rhyme-7 {
+  position: absolute;
+  left: 1020px;
+  top: 460px;
+}
+
+.rhyme-8 {
+  position: absolute;
+  left: 1250px;
+  top: 460px;
+}
+
+.rhyme-9 {
+  position: absolute;
+  left: 1020px;
+  top: 540px;
+}
+
+.rhyme-10 {
+  position: absolute;
+  left: 1250px;
+  top: 540px;
+}
+
+
+.theend { /* positioning of 'the end' text */
+  position: absolute;
+  left: 195px;
+  top: 5px;
+}
+
+.rhymingwords {
+  position: absolute;
+  left: 895px;
+  top: 20px;
+}
+
+.text {
+  position: absolute;
+  left: 95px;
+  top: 120px;
+}
+
+.text-1 {
+  position: absolute;
+  left: 200px;
+  top: 180px;
+}
+
+.text-2 {
+  position: absolute;
+  left: 115px;
+  top: 240px;
+}
+
+.text-3 {
+  position: absolute;
+  left: 8px;
+  top: 630px;
+}
+
+p {
+  font-family: cursive; /* font style for text */
+  font-size: 20px;
+  color: black; /* colour of font */
+}
+
+p1 {
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 25px;
+  color: #5AFF48;
+}
+
+p2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 90px;
+  color: #9CBDFF;
+}
+
+p3 {
+  font-family: 'Pacifico', cursive;
+  font-size: 70px;
+  color: black;
+}
+
+.restart { /* design of text on restart button */
+  position: absolute;
+  background-color: yellow;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  font-family: cursive;
+  left: 280px;
+  top: 680px;
+}
+
+a:hover { /* colour of button */
+background-color: #A8F9FC;
+color: black;
+}

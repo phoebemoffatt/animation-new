@@ -1,0 +1,220 @@
+body { /* background colour and size of screen */
+  margin: 0;
+  background-color: #B7E1F6;
+}
+
+.background {
+  position: absolute;
+  z-index: 0;
+  height: 400px;
+  width: 100%;
+  color: #B7E1F6;
+  top: 1px;
+}
+
+.head { /* chick's features */
+  position: absolute;
+  height: 180px;
+  width: 158px;
+  border-radius: 80px;
+  background: #CECBCB;
+  left: 910px;
+  top: 420px;
+}
+
+.hair-1 { /* chick's features */
+  position: absolute;
+  border-left: 4px solid #CECBCB; /* colour of the hair */
+  height: 40px;
+  transform: rotate(140deg); /* tilting the hair to the correct angle */
+  left: 960px; /* how far left the hair is */
+  top: 390px; /* how high up the hair is */
+}
+
+.hair-2 { /* chick's features */
+  position: absolute;
+  border-left: 4px solid #CECBCB;
+  height: 40px;
+  transform: rotate(170deg);
+  left: 970px;
+  top: 383px;
+}
+
+.hair-3 { /* chick's features */
+  position: absolute;
+  border-left: 4px solid #CECBCB;
+  height: 40px;
+  transform: rotate(196deg);
+  left: 980px;
+  top: 383px;
+}
+
+.half-circle { /* chick's features */
+  position: absolute;
+  width: 20px; /* how long the half circle eye shape stretches */
+  height: 9px; /* how high the half circle eye shape bends */
+  border-top-left-radius: 110px;
+  border-top-right-radius: 110px;
+  transform: rotate(180deg); /* tilting the eye to the correct angle */
+  border: 3px solid black; /* thickness and colour of shape */
+  border-bottom: 0;
+  left: 998px;
+  top: 475px;
+}
+
+.half-circle-2 {
+  position: absolute;
+  width: 20px;
+  height: 9px;
+  border-top-left-radius: 110px;
+  border-top-right-radius: 110px;
+  transform: rotate(180deg);
+  border: 3px solid black;
+  border-bottom: 0;
+  left: 950px;
+  top: 475px;
+}
+
+.cheek-1 {
+  position: absolute;
+  height: 20px;
+  width: 31px;
+  border-radius: 40px; /* defines the radius of the element's corners */
+  background: pink; /* fill colour of the cheeks */
+  left: 920px;
+  top: 505px;
+}
+
+.cheek-2 {
+  position: absolute;
+  height: 20px;
+  width: 31px;
+  border-radius: 40px;
+  background: pink;
+  left: 1026px;
+  top: 505px;
+}
+
+.beak-1 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent; /* size of the border on the left of triangle */
+  border-right: 25px solid transparent; /* size of the border on the right of triangle */
+  border-bottom: 30px solid black; /* height of border on bottom of triangle */
+  left: 965px;
+  top: 510px;
+}
+
+.beak-2 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 30px solid #777272;
+  left: 965px;
+  top: 540px;
+}
+
+.chick { /* whole chick including facial details-everything can move together as one */
+  position: absolute;
+  height: 50%;
+  left: -610px; /* how far left the face will move */
+  top: -150px; /* how high up the face will go */
+}
+
+.chick:hover { /* when the chick is hovered over with mouse */
+  position: absolute;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both; /* how fast the face will shake */
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake { /* name of the keyframe */
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0); /* how many pixels object will move */
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.title { /* positioning of the title on the page */
+  position: absolute;
+  top: 130px;
+  left: 480px;
+}
+
+.text { /* positioning of text on the page */
+  position: absolute;
+  top: 440px;
+  left: 545px;
+}
+
+.text-2 { /* positioning of text on the page */
+  position: absolute;
+  top: 370px;
+  left: 628px;
+}
+
+p1 {
+  padding-top: 10px; /* space between top of page and text */
+  text-align: center; /* text is positioned in center of page */
+  color: black; /* text colour */
+  font-size: 25px; /* size of text */
+  font-family: 'Muli', sans-serif; /* text style */
+  font-family: 'Indie Flower', cursive; /* text style */
+}
+
+.oval {
+  position: absolute;
+  width: 700px;
+  height: 250px;
+  background: white;
+  border-radius: 400px / 200px;
+  top: 175px;
+  left: 409px;
+}
+
+p {
+  padding-top: 30px;
+  text-align: center;
+  color: black;
+  font-size: 70px;
+  font-family: 'Pacifico', cursive;
+}
+
+p2 {
+  padding-top: 30px;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-family: 'Pacifico', cursive;
+}
+
+.next { /* button style */
+  position: absolute;
+  background-color: yellow;
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-family: cursive;
+  left: 655px;
+  top: 550px;
+}
+
+a:hover { /* colour of button when hovered over */
+background-color: white;
+color: black;
+}
